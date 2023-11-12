@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>City Life Estate</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>City Life Estate</h1>
+        <p>"Turning Dreams into Addresses – Your Home, Your Haven."</p>
+      </div>
+      <nav>
+        <button class="nav-buttons" id="dashboard-button">
+          Main Dashboard
+        </button>
+        <button class="nav-buttons" id="maps-button">Maps</button>
+        <button class="nav-buttons" id="save-button">Saved/Compare</button>
+        <button class="nav-buttons" id="sell-button">Sell</button>
+        <div class="user-section">
+          <div id="login-icon">👤</div>
+
+          <!-- User Settings Dropdown -->
+          <div class="user-dropdown">
+            <div class="user-dropdown-content">
+              <a href="#">Settings</a>
+              <a href="#">About</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Popular Properties</h2>
+      <div class="property-listing">
+        <!-- Property Card 1 -->
+        <div class="property-card">
+          <img width="300" height="200" src="property1.jpg" alt="Property 1" />
+          <h3>123 ABC Street</h3>
+          <h4>$999,999</h4>
+          <p>Description.</p>
+          <button>View Details</button>
+        </div>
+
+        <!-- Property Card 2 -->
+        <div class="property-card">
+          <img width="300" height="200" src="property1.jpg" alt="Property 1" />
+          <h3>123 ABC Street</h3>
+          <h4>$999,999</h4>
+          <p>Description.</p>
+          <button>View Details</button>
+        </div>
+
+        <!-- Property Card 3 -->
+        <div class="property-card">
+          <img width="300" height="200" src="property1.jpg" alt="Property 1" />
+          <h3>123 ABC Street</h3>
+          <h4>$999,999</h4>
+          <p>Description.</p>
+          <button>View Details</button>
+        </div>
+        <!-- Property Card 4 -->
+        <div class="property-card">
+          <img width="300" height="200" src="property1.jpg" alt="Property 1" />
+          <h3>123 ABC Street</h3>
+          <h4>$999,999</h4>
+          <p>Description.</p>
+          <button>View Details</button>
+        </div>
+
+        <!-- Property Card 5 -->
+        <div class="property-card">
+          <img width="300" height="200" src="property1.jpg" alt="Property 1" />
+          <h3>123 ABC Street</h3>
+          <h4>$999,999</h4>
+          <p>Description.</p>
+          <button>View Details</button>
+        </div>
+
+        <!-- Property Card 6 -->
+        <div class="property-card">
+          <img width="300" height="200" src="property1.jpg" alt="Property 1" />
+          <h3>123 ABC Street</h3>
+          <h4>$999,999</h4>
+          <p>Description.</p>
+          <button>View Details</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 City Life Estate. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("maps-button")
+        .addEventListener("click", function () {
+          alert("Maps button clicked!");
+        });
+
+      document
+        .getElementById("sell-button")
+        .addEventListener("click", function () {
+          alert("Sell button clicked!");
+        });
+
+      document
+        .getElementById("dashboard-button")
+        .addEventListener("click", function () {
+          alert("Main Dashboard button clicked!");
+        });
+
+      document
+        .getElementById("save-button")
+        .addEventListener("click", function () {
+          alert("Saved/Compare button clicked!");
+        });
+
+      document
+        .getElementById("login-icon")
+        .addEventListener("click", function () {
+          alert("User icon clicked!");
+        });
+    </script>
+  </body>
+</html>

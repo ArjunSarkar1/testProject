@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-left: 1px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+/* New styles for login icon and user settings dropdown */
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+#login-icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.user-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.user-dropdown:hover .user-dropdown-content {
+  display: block;
+}
+
+section {
+  margin: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.property-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.property-card {
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
