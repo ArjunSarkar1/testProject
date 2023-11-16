@@ -1,30 +1,104 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --darkPrimaryColor: #001f3f;
+  --secondaryColor: #0f4c75;
+  --tertiaryColor: #3282b8;
+  --quaternaryColor: #bbe1fa;
+  --lightPrimaryColor: #ebe9e5;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+
+  --tempColor: #00aeff;
+  --bg-color: var(--lightPrimaryColor);
+  --text-color: var(--blackColor);
+
+  --h1-font: 4rem;
+  --h2-font: 2.5rem;
+  --p-font: 1.3rem;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  background-color: var(--lightPrimaryColor);
+  color: var(--text-color);
 }
 
 header {
-  background-color: #000000;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
+  background-color: var(--darkPrimaryColor);
+  text-align: center;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
-nav {
+.logo img {
+  height: 100px;
+}
+
+.nav-bar {
   display: flex;
 }
 
-nav a {
-  color: #fff;
+.nav-bar a {
+  font-size: var(--p-font);
+  color: var(--whiteColor);
+  padding: 10px 25px;
+  font-weight: 500;
   text-decoration: none;
-  margin-right: 20px;
 }
 
+.nav-bar a:hover {
+  color: var(--tempColor);
+}
+
+.nav-bar .dashboard-text {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 15vh;
+  text-align: center;
+  color: var(--blackColor);
+}
+
+.home {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 4.5rem;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.home-text {
+  color: var(--blackColor);
+}
+
+.home-text-p {
+  font-size: var(--p-font);
+}
+
+.home img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.home img:hover {
+  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.45s ease-in-out;
+  transform: scale(1.1);
+}
+
+/*
 nav button {
   background-color: #fff;
   color: #333;
@@ -35,10 +109,10 @@ nav button {
   margin-left: 1px;
   margin-right: 1rem;
   cursor: pointer;
-}
+} */
 
 /* New styles for login icon and user settings dropdown */
-.user-section {
+/* .user-section {
   display: flex;
   align-items: center;
 }
@@ -46,8 +120,8 @@ nav button {
 #login-icon {
   margin-right: 10px;
   cursor: pointer;
-}
-
+} */
+/* 
 .user-dropdown {
   position: relative;
   display: inline-block;
@@ -60,18 +134,44 @@ nav button {
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
+} */
+
+/* .user-dropdown:hover .user-dropdown-content {
+  display: block;
+} */
+
+.user-icon {
+  width: 70px;
+  height: auto;
+  margin-top: 9px;
+  fill: var(--whiteColor);
 }
 
-.user-dropdown:hover .user-dropdown-content {
-  display: block;
+.user-icon:hover,
+.user-icon:focus {
+  cursor: pointer;
+  fill: var(--tempColor);
 }
 
 section {
-  margin: 20px;
+  margin: 15px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--darkPrimaryColor);
+  font-size: var(--h1-font);
 }
 
 h2 {
-  color: #333;
+  text-align: center;
+  color: var(--secondaryColor);
+  font-size: var(--h2-font);
+}
+
+p {
+  font-size: var(--p-font);
 }
 
 .property-listing {
@@ -81,20 +181,36 @@ h2 {
 }
 
 .property-card {
-  width: 300px;
   margin: 10px;
   padding: 15px;
   background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 4px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.property-card img {
+  width: 300px;
+  height: 200px;
+}
+
+.property-card:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 8px 25px 15px rgba(0, 0, 0, 0.2);
+  background-color: var(--quaternaryColor);
+  cursor: pointer;
 }
 
 footer {
-  background-color: #000000;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  position: relative;
-  bottom: 0;
+  background-color: var(--darkPrimaryColor);
+  color: var(--whiteColor);
   width: 100%;
+  padding-bottom: 2.5rem;
+  position: absolute;
+  left: 0;
+}
+
+.footer-content {
+  transform: translateY(100%);
+  text-align: center;
 }
